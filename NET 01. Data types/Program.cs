@@ -34,4 +34,4 @@ decimal dcm = 235.56m;  // System.Decimal - 16 byte
 // reference type
 string name = "Nadir";  // System.String
 
-// %
+
