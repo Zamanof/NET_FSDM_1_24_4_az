@@ -8,11 +8,29 @@ using System.Text;
 //}
 //Console.WriteLine(word);
 
-StringBuilder sb = new StringBuilder("Salam");
-for (int i = 0; i < 100; i++)
+//StringBuilder sb = new StringBuilder("Salam");
+//for (int i = 0; i < 100; i++)
+//{
+//    sb.Append("a");
+//    //Console.WriteLine(sb.Capacity);
+//}
+//var str = sb.ToString();
+//Console.WriteLine(sb);
+
+//var word = string.Empty;
+//for (int i = 0; i < 10000; i++)
+//{
+//    word += $"{i}, "; 
+//}
+//Console.WriteLine(word);
+
+StringBuilder sb = new StringBuilder();
+int count = 0;
+for (int i = 0; i < 10000; i++)
 {
-    sb.Append("a");
-    //Console.WriteLine(sb.Capacity);
+    if(count != sb.Capacity) Console.WriteLine(sb.Capacity);
+    count = sb.Capacity;
+    sb.Append($"{i}, ");
+
 }
-var str = sb.ToString();
-Console.WriteLine(sb);
+//Console.WriteLine(sb);
