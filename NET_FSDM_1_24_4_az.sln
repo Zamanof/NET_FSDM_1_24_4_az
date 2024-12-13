@@ -35,13 +35,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 03. Structs", "NET 03. 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 04", "NET 04", "{4F23F702-C8E5-41E4-A423-6C8DF57518E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 04. Class, this, access modifiers", "NET 04. Class, this, access modifiers\NET 04. Class, this, access modifiers.csproj", "{3BCF005B-B40A-4AC7-9790-780A791B0A4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 04. Class, this, access modifiers", "NET 04. Class, this, access modifiers\NET 04. Class, this, access modifiers.csproj", "{3BCF005B-B40A-4AC7-9790-780A791B0A4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 04. Partial class", "NET 04. Partial class\NET 04. Partial class.csproj", "{86672E87-DE33-486E-B149-73DD9B0F78C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 04. Partial class", "NET 04. Partial class\NET 04. Partial class.csproj", "{86672E87-DE33-486E-B149-73DD9B0F78C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 03. ref, out", "NET 03. ref, out\NET 03. ref, out.csproj", "{3E629890-FB4C-42BF-8BD6-6723252722D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 03. ref, out", "NET 03. ref, out\NET 03. ref, out.csproj", "{3E629890-FB4C-42BF-8BD6-6723252722D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 04. Params", "NET 04. Params\NET 04. Params.csproj", "{B20E99AC-5257-4429-9CED-EEB464A76DE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 04. Params", "NET 04. Params\NET 04. Params.csproj", "{B20E99AC-5257-4429-9CED-EEB464A76DE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 05", "NET 05", "{77F76F98-3B18-4ADF-8492-345F9A144947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 05. in, null conditional, null coalesing, null forgiving", "NET 05. in, null conditional, null coalesing, null forgiving\NET 05. in, null conditional, null coalesing, null forgiving.csproj", "{D783495A-1172-458B-AC62-FFB63E7B4D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 05. Encapsulation, property", "NET 05. Encapsulation, property\NET 05. Encapsulation, property.csproj", "{8487CDD3-08F2-4858-8EAB-EED94D2AE560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 05. Tuple, return many values, deconstruct", "NET 05. Tuple, return many values, deconstruct\NET 05. Tuple, return many values, deconstruct.csproj", "{FE54D4DE-50CF-4AC0-926B-1A03E0ADF32D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +121,18 @@ Global
 		{B20E99AC-5257-4429-9CED-EEB464A76DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20E99AC-5257-4429-9CED-EEB464A76DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20E99AC-5257-4429-9CED-EEB464A76DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D783495A-1172-458B-AC62-FFB63E7B4D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D783495A-1172-458B-AC62-FFB63E7B4D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D783495A-1172-458B-AC62-FFB63E7B4D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D783495A-1172-458B-AC62-FFB63E7B4D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8487CDD3-08F2-4858-8EAB-EED94D2AE560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8487CDD3-08F2-4858-8EAB-EED94D2AE560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8487CDD3-08F2-4858-8EAB-EED94D2AE560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8487CDD3-08F2-4858-8EAB-EED94D2AE560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE54D4DE-50CF-4AC0-926B-1A03E0ADF32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE54D4DE-50CF-4AC0-926B-1A03E0ADF32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE54D4DE-50CF-4AC0-926B-1A03E0ADF32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE54D4DE-50CF-4AC0-926B-1A03E0ADF32D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +154,9 @@ Global
 		{86672E87-DE33-486E-B149-73DD9B0F78C7} = {4F23F702-C8E5-41E4-A423-6C8DF57518E1}
 		{3E629890-FB4C-42BF-8BD6-6723252722D6} = {4F23F702-C8E5-41E4-A423-6C8DF57518E1}
 		{B20E99AC-5257-4429-9CED-EEB464A76DE2} = {4F23F702-C8E5-41E4-A423-6C8DF57518E1}
+		{D783495A-1172-458B-AC62-FFB63E7B4D40} = {77F76F98-3B18-4ADF-8492-345F9A144947}
+		{8487CDD3-08F2-4858-8EAB-EED94D2AE560} = {77F76F98-3B18-4ADF-8492-345F9A144947}
+		{FE54D4DE-50CF-4AC0-926B-1A03E0ADF32D} = {77F76F98-3B18-4ADF-8492-345F9A144947}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3712BC15-AC7A-4BFB-8DA4-FF82BEDF3539}
