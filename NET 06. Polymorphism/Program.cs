@@ -80,5 +80,7 @@ void Foo(Base @base)
 
     @base.Show();
     (@base as Derived)?.Print();
-
 }
+
+// Gelen ders uchun oxuyun Abstract class ve Interface
+// Abstract class vs Interface
