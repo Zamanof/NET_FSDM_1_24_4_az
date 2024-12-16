@@ -86,7 +86,6 @@ class Garage
             cars[(int)Enum.Parse(typeof(Models), model)] = value;
         }
     }
-
 }
 
 class MultiArray
