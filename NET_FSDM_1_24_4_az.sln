@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 06. Indexer", "NET 06. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 06. Inheritance", "NET 06. Inheritance\NET 06. Inheritance.csproj", "{B66E48A8-F12D-437D-9B73-247F9C371AF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 06. Polymorphism", "NET 06. Polymorphism\NET 06. Polymorphism.csproj", "{DCB3B79E-E565-406D-BAAE-80DD7E937AFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{B66E48A8-F12D-437D-9B73-247F9C371AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66E48A8-F12D-437D-9B73-247F9C371AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B66E48A8-F12D-437D-9B73-247F9C371AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB3B79E-E565-406D-BAAE-80DD7E937AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB3B79E-E565-406D-BAAE-80DD7E937AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB3B79E-E565-406D-BAAE-80DD7E937AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB3B79E-E565-406D-BAAE-80DD7E937AFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -180,6 +186,7 @@ Global
 		{970C3DEF-9ABF-472C-B972-DFE3D37A82BB} = {77F76F98-3B18-4ADF-8492-345F9A144947}
 		{CAA03B79-986D-42E8-8FCD-A95C795376D8} = {5D57F426-29BA-4713-9274-40C2210DD460}
 		{B66E48A8-F12D-437D-9B73-247F9C371AF5} = {5D57F426-29BA-4713-9274-40C2210DD460}
+		{DCB3B79E-E565-406D-BAAE-80DD7E937AFC} = {5D57F426-29BA-4713-9274-40C2210DD460}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3712BC15-AC7A-4BFB-8DA4-FF82BEDF3539}
