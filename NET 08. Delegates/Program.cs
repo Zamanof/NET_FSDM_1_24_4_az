@@ -69,12 +69,12 @@
 #endregion
 
 #region Multicast delegates
-CalculatorDelegate calculators = Add;
-calculators += Subtract;
-calculators += Multiple;
-calculators += Divide;
+//CalculatorDelegate calculators = Add;
+//calculators += Subtract;
+//calculators += Multiple;
+//calculators += Divide;
 
-double number1 = 56, number2 = 32;
+//double number1 = 56, number2 = 32;
 
 //Console.WriteLine(calculators(number1, number2));
 
@@ -83,10 +83,19 @@ double number1 = 56, number2 = 32;
 //    Console.WriteLine(calculator(number1, number2));
 //}
 
-var delegateList = calculators.GetInvocationList();
-Console.WriteLine(delegateList[0].Method);
-Console.WriteLine(delegateList[1].Method);
-Console.WriteLine(delegateList[3].DynamicInvoke(25, 22));
+//var delegateList = calculators.GetInvocationList();
+//Console.WriteLine(delegateList[0].Method);
+//Console.WriteLine(delegateList[1].Method);
+//Console.WriteLine(delegateList[3].DynamicInvoke(25, 22));
+
+
+// Generic delegate
+GenericCalcDelegate<double> genericCalcDouble = Add;
+GenericCalcDelegate<int> genericCalcInt = SomeFunction;
+Console.WriteLine(genericCalcDouble.Invoke(20, 15));
+Console.WriteLine(genericCalcInt.Invoke(20, 15)); 
+
+
 
 double Add(double left, double right)
 {
@@ -107,5 +116,13 @@ double Divide(double left, double right)
     throw new DivideByZeroException();
 }
 
+int SomeFunction (int numb1, int numb2)
+{
+    return numb1 % numb2;
+}
+
 public delegate double CalculatorDelegate(double left, double right);
+
+// Generic delagates
+public delegate T GenericCalcDelegate<T>(T left, T right);
 #endregion
