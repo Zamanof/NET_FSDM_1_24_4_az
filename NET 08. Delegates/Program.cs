@@ -90,39 +90,215 @@
 
 
 // Generic delegate
-GenericCalcDelegate<double> genericCalcDouble = Add;
-GenericCalcDelegate<int> genericCalcInt = SomeFunction;
-Console.WriteLine(genericCalcDouble.Invoke(20, 15));
-Console.WriteLine(genericCalcInt.Invoke(20, 15)); 
+//GenericCalcDelegate<double> genericCalcDouble = Add;
+//GenericCalcDelegate<int> genericCalcInt = SomeFunction;
+//Console.WriteLine(genericCalcDouble.Invoke(20, 15));
+//Console.WriteLine(genericCalcInt.Invoke(20, 15)); 
 
 
 
-double Add(double left, double right)
+//double Add(double left, double right)
+//{
+//    return left + right;
+//}
+//double Subtract(double left, double right)
+//{
+//    return left - right;
+//}
+//double Multiple(double left, double right)
+//{
+//    return left * right;
+//}
+
+//double Divide(double left, double right)
+//{
+//    if (right != 0) return left / right;
+//    throw new DivideByZeroException();
+//}
+
+//int SomeFunction (int numb1, int numb2)
+//{
+//    return numb1 % numb2;
+//}
+
+//public delegate double CalculatorDelegate(double left, double right);
+
+//// Generic delagates
+//public delegate T GenericCalcDelegate<T>(T left, T right);
+#endregion
+
+#region Standard generic delgates Action<T>, Func<t>, Predicate<T>, Comparison<T>
+// Action<T>, Func<T>, Predicate<T>, Comparison<T>
+List<int> ints = [25, 32, 6, -54, 1, -89, 2, -554, 1, 7, 112];
+#region delegate in functions
+//var results = filter(ints, delegate (int n) { return n % 2 == 0; });
+
+//foreach (var i in results)
+//{
+//	Console.Write($"{i} ");
+//}
+//Console.WriteLine();
+//List<int> filter(List<int> ints, FilterDelegate filterDelegate)
+//{
+//	List<int> result = new List<int>();
+//	foreach (var item in ints)
+//	{
+//		if (filterDelegate(item)) result.Add(item);
+//	}
+//	return result;
+//}
+#endregion
+
+#region Action
+//int[] arr = new int[13];
+//Random random = new Random();
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    arr[i] = random.Next(-99, 99);
+//}
+
+//foreach (int i in arr)
+//{
+//    Console.Write($"{i} ");
+//}
+//Console.WriteLine();
+////  Action<int> action <=> public delegate void del_name(int n)
+
+//FilteringShow(arr, ShowSquare);
+
+//Action<int, double, string> action = Foo;
+
+//action(25, 23.5, "Salam");
+//void Foo(int numb, double numb1, string str)
+//{
+//    Console.WriteLine($"{str} - {numb * numb1}");
+//}
+
+//void FilteringShow(int[] arr, Action<int> action)
+//{
+//    foreach (var item in arr)
+//    {
+//        action(item);
+//    }
+//    Console.WriteLine();
+//}
+
+
+//void ShowNegate(int numb)
+//{
+//    if(numb < 0) Console.Write($"{numb} ");
+//}
+
+//void ShowSquare(int numb) 
+//{
+//    Console.Write($"{numb * numb}   ");
+//}
+#endregion
+
+#region Func
+//Console.WriteLine(Calculator(25.6, 32.5, Divide));
+
+
+//double Calculator(double numb1, double numb2, Func<double, double, double> func)
+//{
+//    return func(numb1, numb2);
+//}
+//double Add(double left, double right)
+//{
+//    return left + right;
+//}
+//double Subtract(double left, double right)
+//{
+//    return left - right;
+//}
+//double Multiple(double left, double right)
+//{
+//    return left * right;
+//}
+
+//double Divide(double left, double right)
+//{
+//    if (right != 0) return left / right;
+//    throw new DivideByZeroException();
+//}
+
+#endregion
+
+#region Comparison
+//List<Human> humans = [
+//    new Human(){Name = "Nadir", Age = 44},
+//    new Human(){Name = "Salam", Age = 25},
+//    new Human(){Name = "Ali", Age = 15},
+//    new Human(){Name = "Baba", Age = 135},
+//    new Human(){Name = "Qadir", Age = 25}    
+//    ];
+//foreach (var human in humans)
+//{
+//    Console.WriteLine(human);
+//}
+//humans.Sort(NameComparison);
+//Console.WriteLine();
+//foreach (var human in humans)
+//{
+//    Console.WriteLine(human);
+//}
+
+//int AgeComparison(Human left, Human right)
+//{
+//    //return left.Age.CompareTo(right.Age);
+//    if (left.Age > right.Age) return 1;
+//    else if(left.Age < right.Age) return -1;
+//    return 0;
+//}
+
+//int NameComparison(Human left, Human right)
+//{
+//    return left.Name.CompareTo(right.Name);
+
+//}
+
+#endregion
+
+
+#region Predicate
+var results = filter(ints, isPositive);
+
+foreach (var i in results)
 {
-    return left + right;
+	Console.Write($"{i} ");
 }
-double Subtract(double left, double right)
+Console.WriteLine();
+List<int> filter(List<int> ints, Predicate<int> predicate)
 {
-    return left - right;
-}
-double Multiple(double left, double right)
-{
-    return left * right;
+	List<int> result = new List<int>();
+	foreach (var item in ints)
+	{
+		if (predicate(item)) result.Add(item);
+	}
+	return result;
 }
 
-double Divide(double left, double right)
+#endregion
+bool isNegative(int number) 
 {
-    if (right != 0) return left / right;
-    throw new DivideByZeroException();
+	return number < 0;
 }
 
-int SomeFunction (int numb1, int numb2)
+bool isPositive(int number)
 {
-    return numb1 % numb2;
+    return number > 0;
 }
 
-public delegate double CalculatorDelegate(double left, double right);
+public delegate bool FilterDelegate(int value);
 
-// Generic delagates
-public delegate T GenericCalcDelegate<T>(T left, T right);
+class Human
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public override string ToString()
+    {
+        return $"{Name} - {Age}";
+    }
+}
+
 #endregion
