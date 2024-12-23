@@ -59,15 +59,15 @@
 //}
 #endregion
 
-Ekans ekans = new("Ekans");
-//Console.WriteLine(ekans.Fly());
-//ButaAirways(ekans);
-ButaAirways(new Charmander("ch"));
-void ButaAirways(IFlyable flyable)
-{
-    flyable.Fly();
-    Console.WriteLine( (flyable as Ekans)?.Fly());
-}
+//Ekans ekans = new("Ekans");
+////Console.WriteLine(ekans.Fly());
+////ButaAirways(ekans);
+//ButaAirways(new Charmander("ch"));
+//void ButaAirways(IFlyable flyable)
+//{
+//    flyable.Fly();
+//    Console.WriteLine( (flyable as Ekans)?.Fly());
+//}
 
 //EvolveAll([new Pikachu("Pika"), new Charmander("Charm")]);
 
@@ -78,3 +78,5 @@ void ButaAirways(IFlyable flyable)
 //		pokemon.Evolve();
 //	}
 //}
+
+// VACIB: Delegates oxumaq
