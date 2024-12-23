@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Auditory auditory = new();
+foreach (Student student in auditory)
+{
+    Console.WriteLine(student);
+}
