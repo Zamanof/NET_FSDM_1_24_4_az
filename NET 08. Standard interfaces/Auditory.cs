@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Collections;
+using System.Globalization;
 
 class Auditory : IEnumerable
 {
@@ -189,5 +190,10 @@ class Auditory : IEnumerable
     public IEnumerator GetEnumerator()
     {
         return students.GetEnumerator();
+    }
+
+    public void Sort()
+    {
+        Array.Sort(students);
     }
 }
