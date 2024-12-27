@@ -93,13 +93,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 09. Generic collections
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 10", "NET 10", "{6EAA2D63-506D-47DF-8B94-7186E345F95A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 10. Generic VS Non Generic collections", "NET 10. Generic VS Non Generic collections\NET 10. Generic VS Non Generic collections.csproj", "{71BE7F81-829E-419A-AECF-904ECD02D2B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 10. Generic VS Non Generic collections", "NET 10. Generic VS Non Generic collections\NET 10. Generic VS Non Generic collections.csproj", "{71BE7F81-829E-419A-AECF-904ECD02D2B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 10. Annonymous methods, Lambda expression", "NET 10. Annonymous methods, Lambda expression\NET 10. Annonymous methods, Lambda expression.csproj", "{6D638A7F-3126-40BD-9D7C-6500B967A1D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 10. Annonymous methods, Lambda expression", "NET 10. Annonymous methods, Lambda expression\NET 10. Annonymous methods, Lambda expression.csproj", "{6D638A7F-3126-40BD-9D7C-6500B967A1D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 10. LINQ", "NET 10. LINQ\NET 10. LINQ.csproj", "{00B8F65D-0D58-401D-9AA2-54C66E6D57A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 10. LINQ", "NET 10. LINQ\NET 10. LINQ.csproj", "{00B8F65D-0D58-401D-9AA2-54C66E6D57A2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 10. LINQ join", "NET 10. LINQ join\NET 10. LINQ join.csproj", "{C120C189-9676-41A6-BAD9-FDB603453A88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 11", "NET 11", "{058BC72D-CE8B-4C24-9C57-C61B401FC8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 11. Extension methods", "NET 11. Extension methods\NET 11. Extension methods.csproj", "{A4A5EA51-B1C3-49C4-BF99-8394EE73CE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 11. LINQ methods", "NET 11. LINQ methods\NET 11. LINQ methods.csproj", "{968E8EE9-09C5-4DAF-A0E7-3FCBC193F5B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -263,6 +269,14 @@ Global
 		{C120C189-9676-41A6-BAD9-FDB603453A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C120C189-9676-41A6-BAD9-FDB603453A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C120C189-9676-41A6-BAD9-FDB603453A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A5EA51-B1C3-49C4-BF99-8394EE73CE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A5EA51-B1C3-49C4-BF99-8394EE73CE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A5EA51-B1C3-49C4-BF99-8394EE73CE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A5EA51-B1C3-49C4-BF99-8394EE73CE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968E8EE9-09C5-4DAF-A0E7-3FCBC193F5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968E8EE9-09C5-4DAF-A0E7-3FCBC193F5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968E8EE9-09C5-4DAF-A0E7-3FCBC193F5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968E8EE9-09C5-4DAF-A0E7-3FCBC193F5B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -307,6 +321,8 @@ Global
 		{6D638A7F-3126-40BD-9D7C-6500B967A1D3} = {6EAA2D63-506D-47DF-8B94-7186E345F95A}
 		{00B8F65D-0D58-401D-9AA2-54C66E6D57A2} = {6EAA2D63-506D-47DF-8B94-7186E345F95A}
 		{C120C189-9676-41A6-BAD9-FDB603453A88} = {6EAA2D63-506D-47DF-8B94-7186E345F95A}
+		{A4A5EA51-B1C3-49C4-BF99-8394EE73CE87} = {058BC72D-CE8B-4C24-9C57-C61B401FC8AA}
+		{968E8EE9-09C5-4DAF-A0E7-3FCBC193F5B7} = {058BC72D-CE8B-4C24-9C57-C61B401FC8AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3712BC15-AC7A-4BFB-8DA4-FF82BEDF3539}
