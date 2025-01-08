@@ -1,9 +1,6 @@
 ﻿// LINQ methods
 // https://learn.microsoft.com/en-us/dotnet/csharp/linq/get-started/introduction-to-linq-queries
 
-
-using System.Threading.Channels;
-
 List<Group> groups = [
     new Group(){Id = 1, Name="FSDM_1_24_4_az", Faculty="Programming"},
     new Group(){Id = 2, Name="FSDM_2_24_4_az", Faculty="Programming"},
@@ -189,21 +186,21 @@ List<Student> students = [
 //    Console.WriteLine($"{student.FirstName} {student.LastName} - {student.GroupName}");
 //}
 
-var resultGroup = groups.GroupJoin(students,
-                            g => g.Id,
-                            s => s.GroupId,
-                            (g, s) => new
-                            {
-                                GroupName = g.Name,
-                                Students = s
-                            });
+//var resultGroup = groups.GroupJoin(students,
+//                            g => g.Id,
+//                            s => s.GroupId,
+//                            (g, s) => new
+//                            {
+//                                GroupName = g.Name,
+//                                Students = s
+//                            });
 
-foreach (var group in resultGroup)
-{
-    Console.WriteLine(group.GroupName);
-    foreach (var student in group.Students)
-    {
-        Console.WriteLine($"\t{student.FirstName} {student.LastName} - {student.Age}");
-    }
-}
+//foreach (var group in resultGroup)
+//{
+//    Console.WriteLine(group.GroupName);
+//    foreach (var student in group.Students)
+//    {
+//        Console.WriteLine($"\t{student.FirstName} {student.LastName} - {student.Age}");
+//    }
+//}
 #endregion
