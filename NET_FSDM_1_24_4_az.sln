@@ -115,19 +115,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 12. Garbage collector e
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 13", "NET 13", "{83816C75-AC25-45B8-B3AE-171DD2286A1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13. Files byte streams", "NET 13. Files byte streams\NET 13. Files byte streams.csproj", "{D5A7AE79-E0B1-4567-B42F-F7071D19F18E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13. Files byte streams", "NET 13. Files byte streams\NET 13. Files byte streams.csproj", "{D5A7AE79-E0B1-4567-B42F-F7071D19F18E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13. StreamWriter, StreamReader", "NET 13. StreamWriter, StreamReader\NET 13. StreamWriter, StreamReader.csproj", "{43D6EDF1-9C66-44CA-A90B-B5BD80BFF313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13. StreamWriter, StreamReader", "NET 13. StreamWriter, StreamReader\NET 13. StreamWriter, StreamReader.csproj", "{43D6EDF1-9C66-44CA-A90B-B5BD80BFF313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13. Finalizer", "NET 13. Finalizer\NET 13. Finalizer.csproj", "{137E1B7A-BCD5-4C69-9193-A939A0DE1073}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13. Finalizer", "NET 13. Finalizer\NET 13. Finalizer.csproj", "{137E1B7A-BCD5-4C69-9193-A939A0DE1073}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13. IDisposable", "NET 13. IDisposable\NET 13. IDisposable.csproj", "{B52905DC-F2B9-42E4-AD30-5288B866043C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13. IDisposable", "NET 13. IDisposable\NET 13. IDisposable.csproj", "{B52905DC-F2B9-42E4-AD30-5288B866043C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13.  IDisposable vs using", "NET 13.  IDisposable vs using\NET 13.  IDisposable vs using.csproj", "{8E7FC74E-6864-486B-9A63-EAA57282258A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13.  IDisposable vs using", "NET 13.  IDisposable vs using\NET 13.  IDisposable vs using.csproj", "{8E7FC74E-6864-486B-9A63-EAA57282258A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13. BinaryWriter, BinaryReader", "NET 13. BinaryWriter, BinaryReader\NET 13. BinaryWriter, BinaryReader.csproj", "{28623734-F5FA-49EA-9DFD-7DB73FB8177F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13. BinaryWriter, BinaryReader", "NET 13. BinaryWriter, BinaryReader\NET 13. BinaryWriter, BinaryReader.csproj", "{28623734-F5FA-49EA-9DFD-7DB73FB8177F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 13. Directory", "NET 13. Directory\NET 13. Directory.csproj", "{0D81BB73-AE0E-4558-8594-955B6D99FDF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NET 13. Directory", "NET 13. Directory\NET 13. Directory.csproj", "{0D81BB73-AE0E-4558-8594-955B6D99FDF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 15", "NET 15", "{3556D935-324B-4D4C-98C4-F57B6BCC51EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 15. Serialization", "NET 15. Serialization\NET 15. Serialization.csproj", "{D183B97A-75D8-4650-95EB-6DFFEA195E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 15. Serialization from API", "NET 15. Serialization from API\NET 15. Serialization from API.csproj", "{124A48EA-EC33-49DA-82FA-7362FD96CAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 15. Yield", "NET 15. Yield\NET 15. Yield.csproj", "{3C9AE13A-479F-41FD-8005-CE1F14B2030F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 15. Regular expressions", "NET 15. Regular expressions\NET 15. Regular expressions.csproj", "{C11D3F85-856A-48DB-AA3B-555D290FDEC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -335,6 +345,22 @@ Global
 		{0D81BB73-AE0E-4558-8594-955B6D99FDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D81BB73-AE0E-4558-8594-955B6D99FDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D81BB73-AE0E-4558-8594-955B6D99FDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D183B97A-75D8-4650-95EB-6DFFEA195E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D183B97A-75D8-4650-95EB-6DFFEA195E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D183B97A-75D8-4650-95EB-6DFFEA195E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D183B97A-75D8-4650-95EB-6DFFEA195E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{124A48EA-EC33-49DA-82FA-7362FD96CAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124A48EA-EC33-49DA-82FA-7362FD96CAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124A48EA-EC33-49DA-82FA-7362FD96CAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124A48EA-EC33-49DA-82FA-7362FD96CAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9AE13A-479F-41FD-8005-CE1F14B2030F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9AE13A-479F-41FD-8005-CE1F14B2030F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9AE13A-479F-41FD-8005-CE1F14B2030F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9AE13A-479F-41FD-8005-CE1F14B2030F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11D3F85-856A-48DB-AA3B-555D290FDEC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11D3F85-856A-48DB-AA3B-555D290FDEC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11D3F85-856A-48DB-AA3B-555D290FDEC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11D3F85-856A-48DB-AA3B-555D290FDEC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -390,6 +416,10 @@ Global
 		{8E7FC74E-6864-486B-9A63-EAA57282258A} = {83816C75-AC25-45B8-B3AE-171DD2286A1D}
 		{28623734-F5FA-49EA-9DFD-7DB73FB8177F} = {83816C75-AC25-45B8-B3AE-171DD2286A1D}
 		{0D81BB73-AE0E-4558-8594-955B6D99FDF3} = {83816C75-AC25-45B8-B3AE-171DD2286A1D}
+		{D183B97A-75D8-4650-95EB-6DFFEA195E8D} = {3556D935-324B-4D4C-98C4-F57B6BCC51EA}
+		{124A48EA-EC33-49DA-82FA-7362FD96CAAB} = {3556D935-324B-4D4C-98C4-F57B6BCC51EA}
+		{3C9AE13A-479F-41FD-8005-CE1F14B2030F} = {3556D935-324B-4D4C-98C4-F57B6BCC51EA}
+		{C11D3F85-856A-48DB-AA3B-555D290FDEC8} = {3556D935-324B-4D4C-98C4-F57B6BCC51EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3712BC15-AC7A-4BFB-8DA4-FF82BEDF3539}
