@@ -63,10 +63,10 @@ $           - shablon metnin sonunda olmalidir
  
  */
 
-//string passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8, }$";
+//string passwordPattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$";
 //string password = "quertyQ1234";
 //Regex regex = new Regex(passwordPattern);
 //Console.WriteLine(regex.IsMatch(password));
-Regex mailPattern = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
-Console.WriteLine(mailPattern.IsMatch("Salam@salam.com"));
+//Regex mailPattern = new Regex(@"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+//Console.WriteLine(mailPattern.IsMatch("Salam@salam.com"));
 #endregion
